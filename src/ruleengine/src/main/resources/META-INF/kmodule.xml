@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
+   <kbase name="criteriarules" packages="criteriarules">
+        <ksession name="criteria-rule" type="stateless"/>
+    </kbase>
+    <kbase name="partnerproductcodeslarules" packages="slarules.partnerproductcodeslarules">
+        <ksession name="partnerproductcodesla-rules" type="stateless"/>
+    </kbase>
+    
+    <kbase name="partnerslarules" packages="slarules.partnerslarules">
+        <ksession name="partnersla-rules" type="stateless"/>
+    </kbase>
+    
+    <kbase name="productcodeslarules" packages="slarules.productcodeslarules">
+        <ksession name="productcodesla-rules" type="stateless"/>
+    </kbase>
+    
+    
+	<kbase name="hubrules" packages="hubrules">
+        <ksession name="huballocation-rules" type="stateless"/>
+    </kbase>
+    </kmodule>

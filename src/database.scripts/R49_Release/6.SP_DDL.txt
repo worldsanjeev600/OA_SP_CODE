@@ -1,0 +1,4 @@
+ALTER SESSION SET CURRENT_SCHEMA=ONEASSIST_SP;
+alter table OA_SERVICE_REQUEST_DTL add pendency clob null;
+ 
+commit;

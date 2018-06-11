@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.onesassist.serviceplatform</groupId>
+	<artifactId>oneassist</artifactId>
+	<packaging>pom</packaging>
+	<name>serviceplatform</name>
+	<version>1.0.0</version>
+	<properties><main.basedir>${project.basedir}</main.basedir></properties>
+	<build>
+	</build>
+	<profiles>
+		<profile>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<property><name>build-all</name></property>
+			</activation>
+			<id>build-all</id>
+			<modules>
+				<module>serviceplatform.contracts</module>
+				<module>ruleengine</module>
+				<module>serviceplatform.cache</module>
+				<module>serviceplatform.commons</module>
+				<module>serviceplatform.services</module>
+				<module>serviceplatform.webservice</module>
+			</modules>	
+		</profile>
+		<profile>
+			<id>BATCH</id>
+			<properties>
+				<env>BATCH</env>
+			</properties>
+			<modules>
+				<module>serviceplatform.contracts</module>
+				<module>ruleengine</module>
+				<module>serviceplatform.cache</module>
+				<module>serviceplatform.commons</module>
+				<module>serviceplatform.services</module>
+				<module>serviceplatform.batch</module>
+				<module>serviceplatform.utilities</module>
+			</modules>	
+		</profile>
+	</profiles>
+</project>

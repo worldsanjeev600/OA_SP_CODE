@@ -1,0 +1,60 @@
+[
+	{
+		"userLoginId":"unite-ws",
+		"userPassword":"sBGPeSGW5PtbC5en",
+		"userDescription":"API user for unite application to connect",
+		"status":"A"
+	},
+
+	{
+		"userLoginId":"mobileapp-ws",
+		"userPassword":"65tDbpKDVbTuqARn",
+		"userDescription":"API user for Mobile application to connect",
+		"status":"A"
+	},
+	
+	{
+		"userLoginId":"oasysadmin-ws",
+		"userPassword":"6BEK9FMCYBr5T2j2",
+		"userDescription":"API user for OASYS Admin application to connect",
+		"status":"A"
+	},
+	
+	{
+		"userLoginId":"crm-ws",
+		"userPassword":"QHM7fxbXAnR3HtGC",
+		"userDescription":"API user for CRM application to connect",
+		"status":"A"
+	},
+	
+	{
+		"userLoginId":"AirtelWS",
+		"userPassword":"bW6BuAN68TksbHnp",
+		"userDescription":"API user for OASYS Admin application to connect",
+		"status":"A"
+	},
+	{
+		"userLoginId":"dhl-ws",
+		"userPassword":"pD0NgsVJnS0YGgBgmpk",
+		"userDescription":"API user for DHL application to connect",
+		"status":"A"
+	},
+	{
+		"userLoginId":"ecom-ws",
+		"userPassword":"xFZQHG9UV3tAAK2m",
+		"userDescription":"API user for DHL application to connect",
+		"status":"A"
+	},
+	{
+		"userLoginId":"loginext-ws",
+		"userPassword":"rvo989VnZUtJbxJU",
+		"userDescription":"API user for DHL application to connect",
+		"status":"A"
+	},
+	{
+		"userLoginId":"fedex-ws",
+		"userPassword":"AJ+SIROL36KWjxR1fdvkyt1",
+		"userDescription":"API user for DHL application to connect",
+		"status":"A"
+	}
+]

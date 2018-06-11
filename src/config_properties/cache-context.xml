@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="partnerMasterCache"
+		class="com.oneassist.serviceplatform.commons.cache.PartnerMasterCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="serviceMasterCache"
+		class="com.oneassist.serviceplatform.commons.cache.ServiceMasterCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="hubMasterCache"
+		class="com.oneassist.serviceplatform.commons.cache.HubMasterCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="systemConfigMasterCache"
+		class="com.oneassist.serviceplatform.commons.cache.SystemConfigMasterCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="pinCodeMasterCache"
+		class="com.oneassist.serviceplatform.commons.cache.PinCodeMasterCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="partnerEventMasterCache"
+		class="com.oneassist.serviceplatform.commons.cache.PartnerEventMasterCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="productMasterCache"
+		class="com.oneassist.serviceplatform.commons.cache.ProductMasterCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="partnerBUCache"
+		class="com.oneassist.serviceplatform.commons.cache.PartnerBUCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="serviceTaskMasterCache"
+		class="com.oneassist.serviceplatform.commons.mastercache.ServiceTaskMasterCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="taskListForAllDeploymentCache"
+		class="com.oneassist.serviceplatform.commons.mastercache.TaskListForAllDeploymentCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="serviceRequestTypeMasterCache"
+		class="com.oneassist.serviceplatform.commons.mastercache.ServiceRequestTypeMasterCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="serviceRequestStageMasterCache"
+		class="com.oneassist.serviceplatform.commons.mastercache.ServiceRequestStageMasterCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="serviceRequestStageStatusMstCache"
+		class="com.oneassist.serviceplatform.commons.mastercache.ServiceRequestStageStatusMstCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="serviceRequestTransitionConfigCache"
+		class="com.oneassist.serviceplatform.commons.mastercache.ServiceRequestTransitionConfigCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+	<bean id="genericKeySetCache"
+		class="com.oneassist.serviceplatform.commons.mastercache.GenericKeySetCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="servicePartnerMappingCache"
+		class="com.oneassist.serviceplatform.cache.ServicePartnerMappingCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="serviceRequestDocumentTypeMasterCache"
+		class="com.oneassist.serviceplatform.commons.mastercache.ServiceRequestDocumentTypeMasterCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+	<bean id="docTypeConfigDetailCache"
+		class="com.oneassist.serviceplatform.commons.mastercache.DocTypeConfigDetailCache">
+		<property name="cacheRefreshTime" value="900000" />
+	</bean>
+
+
+
+
+	<bean id="cacheFactory"
+		class="com.oneassist.serviceplatform.commons.cache.base.CacheFactory">
+		<property name="cache">
+			<map>
+				<entry key="partnerMasterCache" value-ref="partnerMasterCache">
+				</entry>
+				<entry key="serviceMasterCache" value-ref="serviceMasterCache">
+				</entry>
+				<entry key="hubMasterCache" value-ref="hubMasterCache">
+				</entry>
+				<entry key="systemConfigMasterCache" value-ref="systemConfigMasterCache">
+				</entry>
+				<entry key="pinCodeMasterCache" value-ref="pinCodeMasterCache">
+				</entry>
+				<entry key="partnerEventMasterCache" value-ref="partnerEventMasterCache">
+				</entry>
+				<entry key="productMasterCache" value-ref="productMasterCache">
+				</entry>
+				<entry key="partnerBUCache" value-ref="partnerBUCache">
+				</entry>
+				<entry key="serviceTaskMasterCache" value-ref="serviceTaskMasterCache">
+				</entry>
+				<entry key="taskListForAllDeploymentCache" value-ref="taskListForAllDeploymentCache">
+				</entry>
+				<entry key="serviceRequestTypeMasterCache" value-ref="serviceRequestTypeMasterCache">
+				</entry>
+				<entry key="servicePartnerMappingCache" value-ref="servicePartnerMappingCache"></entry>
+				<entry key="serviceRequestStageMasterCache" value-ref="serviceRequestStageMasterCache">
+				</entry>
+				<entry key="serviceRequestStageStatusMstCache" value-ref="serviceRequestStageStatusMstCache">
+				</entry>
+				<entry key="serviceRequestTransitionConfigCache" value-ref="serviceRequestTransitionConfigCache">
+				</entry>
+				<entry key="genericKeySetCache" value-ref="genericKeySetCache">
+				</entry>
+				<entry key="serviceRequestDocumentTypeMasterCache" value-ref="serviceRequestDocumentTypeMasterCache">
+				</entry>
+
+				<entry key="docTypeConfigDetailCache" value-ref="docTypeConfigDetailCache">
+				</entry>
+
+
+			</map>
+		</property>
+	</bean>
+
+
+</beans>

@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Implementation-Title: serviceplatform.webservice (web app war)
+Implementation-Version: 1.0.0-SNAPSHOT
+Build-Host-Linux: 
+Built-By: sanjeev.gupta
+Built-OS: Windows 8.1
+Build-ScmBranch: branches/R51/src/serviceplatform.webservice
+Created-By: Apache Maven 3.3.9
+Build-Date: 09-Jun-2018 12:29:41
+Build-Number: Trunk.DEV-1716
+Implementation-Vendor-Id: serviceplatform
+Build-Profile: DEV
+Build-ScmRevision: 1716
+Build-Jdk: 1.7.0_79
+Specification-Title: serviceplatform.webservice (web app war)
+Build-LocalSourceCodeDirectory: D:\Source Code\Service Platform\Servic
+ e-Digitization-R51\src\serviceplatform.webservice
+Build-Host-Windows: PLG-29
+Specification-Version: 1.0.0-SNAPSHOT
+

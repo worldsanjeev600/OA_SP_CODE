@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>serviceplatform</groupId>
+  <artifactId>serviceplatform.batch</artifactId>
+  <name>serviceplatform.batch (batch jar)</name>
+  <version>1.0.0-SNAPSHOT</version>
+  <url>http://maven.apache.org</url>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.4.3</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <transformers>
+                <transformer>
+                  <mainClass>com.oneassist.serviceplatform.batch.ServicePlatformBatch</mainClass>
+                </transformer>
+                <transformer>
+                  <resource>META-INF/spring.handlers</resource>
+                </transformer>
+                <transformer>
+                  <resource>META-INF/spring.schemas</resource>
+                </transformer>
+              </transformers>
+              <filters>
+                <filter>
+                  <artifact>*:*</artifact>
+                  <excludes>
+                    <exclude>META-INF/*.SF</exclude>
+                    <exclude>META-INF/*.DSA</exclude>
+                    <exclude>META-INF/*.RSA</exclude>
+                  </excludes>
+                </filter>
+              </filters>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.8</version>
+        <executions>
+          <execution>
+            <phase>test</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <tasks>
+                <echo>Using ${env}</echo>
+                <echo />
+                <copy />
+                <copy />
+                <copy />
+                <copy />
+                <copy />
+                <copy />
+                <copy />
+                <copy />
+                <copy />
+                <copy />
+                <copy />
+                <copy />
+              </tasks>
+              <artifactSet />
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <profiles>
+    <profile>
+      <id>DEV</id>
+      <properties>
+        <env>DEV</env>
+      </properties>
+    </profile>
+    <profile>
+      <id>SIT1</id>
+      <properties>
+        <env>SIT1</env>
+      </properties>
+    </profile>
+    <profile>
+      <id>TESTENV</id>
+      <properties>
+        <env>SIT1</env>
+      </properties>
+    </profile>
+    <profile>
+      <id>UAT1</id>
+      <properties>
+        <env>UAT1</env>
+      </properties>
+    </profile>
+    <profile>
+      <id>PROD</id>
+      <properties>
+        <env>PROD</env>
+      </properties>
+    </profile>
+    <profile>
+      <id>UAT2</id>
+      <properties>
+        <env>UAT2</env>
+      </properties>
+    </profile>
+    <profile>
+      <id>SIT2</id>
+      <properties>
+        <env>SIT2</env>
+      </properties>
+    </profile>
+    <profile>
+      <id>SIT3</id>
+      <properties>
+        <env>SIT3</env>
+      </properties>
+    </profile>
+    <profile>
+      <id>SIT4</id>
+      <properties>
+        <env>SIT4</env>
+      </properties>
+    </profile>
+    <profile>
+      <id>QA1</id>
+      <properties>
+        <env>QA1</env>
+      </properties>
+    </profile>
+    <profile>
+      <id>QA2</id>
+      <properties>
+        <env>QA2</env>
+      </properties>
+    </profile>
+    <profile>
+      <id>QA3</id>
+      <properties>
+        <env>QA3</env>
+      </properties>
+    </profile>
+    <profile>
+      <id>QA4</id>
+      <properties>
+        <env>QA4</env>
+      </properties>
+    </profile>
+  </profiles>
+  <repositories>
+    <repository>
+      <id>local</id>
+      <url>file://${basedir}/../serviceplatform.webservice/src/main/webapp/WEB-INF/lib</url>
+    </repository>
+    <repository>
+      <id>AsposeJavaAPI</id>
+      <name>Aspose Java API</name>
+      <url>http://maven.aspose.com/artifactory/simple/ext-release-local/</url>
+    </repository>
+    <repository>
+      <id>codelds</id>
+      <url>https://code.lds.org/nexus/content/groups/main-repo</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>1.3.2</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+  <properties>
+    <hibernate-entitymanager.version>4.2.7.Final</hibernate-entitymanager.version>
+    <spring.data.rest.webmvc.version>2.5.10.RELEASE</spring.data.rest.webmvc.version>
+    <main.basedir>${project.basedir}</main.basedir>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <activiti-version>5.18.0</activiti-version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <springdata.version>1.10.2.RELEASE</springdata.version>
+    <springweb.version>4.3.11.RELEASE</springweb.version>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <spring.version>4.3.2.RELEASE</spring.version>
+  </properties>
+</project>
+
